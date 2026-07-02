@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 // 📰 NEWS API ROUTE
 app.get("/news", async (req, res) => {
   try {
-    const url = `https://newsdata.io/api/1/latest?apikey=${API_KEY}&country=in`;
+    const url = `https://newsdata.io/api/1/latest?apikey=pub_2f78b76b06434100abf951f3c6aad824&country=in`;
 
     const response = await fetch(url);
     const data = await response.json();
